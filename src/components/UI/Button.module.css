@@ -1,0 +1,17 @@
+button {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #13d9ae;
+    transition: all .3s;
+}
+
+button:hover {
+    transform: translateY(2px) scale(.97);
+}

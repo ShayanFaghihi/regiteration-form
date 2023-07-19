@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Form from "./components/Form";
+
+import "./App.css";
 
 function App() {
+  const [message, setMessage] = useState("");
+
+  const submitMessageHandler = (message) => {
+    setMessage(message);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="container">
+      <h1>Registration Form</h1>
+      {message ? <span className="message">{message}</span> : null}
+      <Form onSubmit={submitMessageHandler} />
+    </section>
   );
 }
 
