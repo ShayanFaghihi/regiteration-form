@@ -3,7 +3,7 @@
 This is a simple React project that implements a registration form. The form collects the user's First Name, Last Name, and Email. It utilizes React, React's `useState` hook, and `useRef` hook to manage form data and check for field completion. After successful registration, a confirmation message is displayed.
 
 ## Online Version
-[Online Version] (https://shayan-register-form.netlify.app)
+[Online Version](https://shayan-register-form.netlify.app)
 
 ## Features
 
